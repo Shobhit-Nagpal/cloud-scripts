@@ -22,3 +22,6 @@ sudo apt install docker-ce
 
 # Check status
 sudo systemctl status docker
+
+# Add user to Docker group (to not write sudo everytime)
+sudo usermod -aG docker ${USER} # Note: Make sure to logout or run su - ${USER} for this change to reflect
